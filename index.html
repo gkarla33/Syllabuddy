@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title>SYLLABUDDY</title>
+    <title>Syllabuddy</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="static/main.css" />
 
     <!-- import the webpage's javascript file -->
-    <script type="text/javascript" src="main.js" defer></script>
-</head>
-<body>
-<div class="container" id="containerID">
-    <form class="form" id="login">
-        <h1 name="gatekeeper" id="gateKeeper hidden" class="form__title">SYLLABUDDY</h1>
+    <script type="text/javascript" src="static/script.js" defer></script>
+  </head>
+  <body>
+    <div class="loginPage" id="loginPage">
+      <form class="form" id="login" method="POST">
+        <h1 name="gatekeeper" id="gateKeeper hidden" class="form__title">
+          SYLLABUDDY
+        </h1>
         <div class="form__message form__message--error"></div>
         <div class="form__input-group">
-          <p class="input-instruction"> Username</p>
-            <input name="username" id="username" type="text" class="form__input" autofocus>
-            <label for="username"></label>
-            <div class="form__input-error-message"></div>
+          <p class="input-instruction">Username</p>
+          <input name="username" id="username" type="text" class="form__input" autofocus/>
+          <div class="form__input-error-message"></div>
         </div>
         <div class="form__input-group">
-            <p class="input-instruction"> Password</p>
-            <input name="password" id="password" type="password" class="form__input" autofocus>
-            <label for="password"></label>
-            <div class="form__input-error-message"></div>
+          <p class="input-instruction">Password</p>
+          <input name="password" id="password" type="password" class="form__input" autofocus/>
+          <div class="form__input-error-message"></div>
         </div>
-        <p class ="forgot-pass">Forgot Password?</p>
-        <button class="login__button" id="continueLogin" type="submit">LOG IN</button>
+        <p class="forgot-pass">Forgot Password?</p>
+        <button class="login__button" id="continueLogin" type="submit" action="/">LOG IN</button>
         <button class="signup__button" id="continueSignup" type="submit">SIGN UP</button>
-    </form>
-</div>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
