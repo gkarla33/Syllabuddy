@@ -47,3 +47,24 @@ function clearInputError(inputElement, message) {
 
 const containerForm = document.querySelector("#loginPage");
 const loginForm = document.querySelector("#login");
+
+
+document.getElementById('todoBtn').onclick = function() {
+    var div = document.getElementById('todoPop');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+
+document.getElementById('courseBtn').onclick = function() {
+    var div = document.getElementById('courseInfo');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
