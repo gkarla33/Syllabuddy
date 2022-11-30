@@ -89,6 +89,7 @@ h2 {
 
 .form__input {
   background: black;
+  color: white;
   height: 20px;
   width: 400px;
   position: relative;
