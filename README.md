@@ -1,3 +1,4 @@
-# CS4326-School-Planner
+# Syllabuddy
 School planner website
-Demo Here: https://snapdragon-seemly-silene.glitch.me
+<br/>
+Demo Here: [Syllabuddy Site](https://snapdragon-seemly-silene.glitch.me)
