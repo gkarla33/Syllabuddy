@@ -3,25 +3,15 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  
+  width: 1024px;
+  height: 768px;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-@keyframes rotate {
-  100% {
-    transform: rotate(1turn);
-  }
-}
-
-/* adjust typography defaults */
 body {
   margin: 1rem;
   line-height: 1.5;
-  background-color: black; /* controls backdrop color */
+  background-color: black;
 
   --color-primary: #009579;
   --color-primary-dark: #007f67;
@@ -37,7 +27,7 @@ h1 {
   color: white; 
   text-align: left;
   position: absolute;
-  top: 8%;
+  top: 2%;
   left: 5%;
 }
 
@@ -80,12 +70,22 @@ tr:last-child {
   border-bottom: none;
 }
 
+.days {
+  color: white;
+  position: absolute;
+  left: 5%;
+  top: 13%;
+  text-align: left;
+}
+
 .hours {
   color: white;
   font-size: 14px;
   text-align: left;
   position: absolute;
   top: 25%;
+  bottom: 20%;
+  width: 10%;
 }
 
 .text {
@@ -101,6 +101,8 @@ tr:last-child {
   top: auto;
   width: 100%;
   height: 50px;
+  font-size: 24px;
+  font-weight: bold;
 }
 .todo-btn:hover {
   background-color: gainsboro;
@@ -173,7 +175,7 @@ tr:last-child {
   height: 90%;
   border: none;
   border-right: 2px solid black;
-  right: 14%;
+  right: 15%;
 }
 
 .todo-box6 {
@@ -186,6 +188,213 @@ tr:last-child {
   right: 0%;
 }
 
+.cs3339-btn {
+  background-color: #383838;
+  width: 14.3%;
+  height: 11%;
+  position: absolute;
+  top: 56%;
+  left: 14.3%;
+  border: none;
+  border-top: 25px solid;
+  border-left: 5px solid;
+  border-color: #EBF99A;
+  border-radius: 10px 0px 10px 0px;
+}
+.cs3339-btn:hover {
+  background-color: #1f1f1f;
+  border-color: #e1f66a;
+}
+
+.cs3339-btn1 {
+  background-color: #383838;
+  width: 14.3%;
+  height: 11%;
+  position: absolute;
+  top: 56%;
+  left: 42.9%;
+  border: none;
+  border-top: 25px solid;
+  border-left: 5px solid;
+  border-color: #EBF99A;
+  border-radius: 10px 0px 10px 0px;
+}
+.cs3339-btn1:hover {
+  background-color: #1f1f1f;
+  border-color: #e1f66a;
+}
+
+.cs3398-btn {
+  background-color: #383838;
+  width: 14.3%;
+  height: 11%;
+  position: absolute;
+  top: 83.8%;
+  left: 14.3%;
+  border: none;
+  border-top: 25px solid;
+  border-left: 5px solid;
+  border-color: #bffffb;
+  border-radius: 10px 0px 10px 0px;
+}
+.cs3398-btn:hover {
+  background-color: #1f1f1f;
+  border-color: #84fff7;
+}
+
+.cs3398-btn1 {
+  background-color: #383838;
+  width: 14.3%;
+  height: 11%;
+  position: absolute;
+  top: 83.8%;
+  left: 42.9%;
+  border: none;
+  border-top: 25px solid;
+  border-left: 5px solid;
+  border-color: #bffffb;
+  border-radius: 10px 0px 10px 0px;
+}
+.cs3398-btn1:hover {
+  background-color: #1f1f1f;
+  border-color: #84fff7;
+}
+
+.cs4326-btn {
+  background-color: #383838;
+  width: 14.3%;
+  height: 11%;
+  position: absolute;
+  top: 13%;
+  left: 28.6%;
+  border: none;
+  border-top: 25px solid;
+  border-left: 5px solid;
+  border-color: coral;
+  border-radius: 10px 0px 10px 0px;
+}
+.cs4326-btn:hover {
+  background-color: #1f1f1f;
+  border-color: #cc6300;
+}
+
+.cs4326-btn1 {
+  background-color: #383838;
+  width: 14.3%;
+  height: 11%;
+  position: absolute;
+  top: 13%;
+  left: 71.5%;
+  border: none;
+  border-top: 25px solid;
+  border-left: 5px solid;
+  border-color: coral;
+  border-radius: 10px 0px 10px 0px;
+}
+.cs4326-btn1:hover {
+  background-color: #1f1f1f;
+  border-color: #cc6300;
+}
+
+.class-info {
+  background-color: #383838;
+  position: sticky;
+  top: 10%;
+  left: 25%;
+  width: 60%;
+  height: 50%;
+  border: none;
+  border-top: 20px solid;
+  border-left: 10px solid;
+  
+  border-radius: 20px 0px 20px 0px;
+}
+
+.class-info-header {
+  font-size: 18px;
+  position: absolute;
+  width: 100%;
+  top: -6%;
+}
+
+.text1 {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 8%;
+  width: 100%;
+}
+
+.class-line {
+  position: absolute;
+  bottom: 50%;
+  left: 5%;
+  width: 90%;
+  height: 3px;
+}
+
+.syllabus-btn {
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
+  width: 25%;
+  height: 10%;
+  border:none;
+  border-radius: 15px;
+}
+.syllabus-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.assignments-btn {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 25%;
+  height: 10%;
+  border:none;
+  border-radius: 15px;
+}
+.assignments-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.grades-btn {
+  position: absolute;
+  bottom: 30%;
+  right: 20%;
+  width: 25%;
+  height: 10%;
+  border:none;
+  border-radius: 15px;
+}
+.grades-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+.files-btn {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  width: 25%;
+  height: 10%;
+  border:none;
+  border-radius: 15px;
+}
+.files-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}  
+
+.box-header {
+  position: absolute;
+  left: 10%;
+  top: -40%;
+  font-weight: bold;
+}
+
+.box-text {
+  color: white;
+}
 
 .calendar-base {
   background-color: #232323;
@@ -198,29 +407,17 @@ tr:last-child {
   height: 1100px;
 }
 
-.calendar-box {
-  background-color: #383838;
-  width: 14.3%;
-  height: 11%;
-  position: absolute;
-  top: 53%;
-  border: none;
-  border-top: 20px solid;
-  border-left: 5px solid;
-  border-color: #EBF99A;
-}
-.calendar-box:hover {
-  background-color: #1f1f1f;
-  border-color: #e1f66a;
-}
-
-.cs3339-info {
-  position: absolute;
-  top: 50%;
-  right: 50%;
+.exit-btn {
   background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -1%;
+  right: 2%;
+  text-align: center;
 }
-
-.box-text {
-  color: white;
-}
+.exit-btn:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1), 0 6px 20px 0 rgba(0, 0, 0, .3);
+}  
