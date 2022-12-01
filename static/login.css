@@ -1,18 +1,8 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-@keyframes rotate {
-  100% {
-    transform: rotate(1turn);
-  }
+  width: 1024px;
+  height: 768px;
 }
 
 /* adjust typography defaults */
@@ -32,8 +22,11 @@ body {
 h1 {
   font-family: inter, arial, sans-serif;
   font-size: 50px;
-  color: #90ede7; /* controls color and font of heading/game name */
+  color: #90ede7; 
+  position: absolute;
+  left: 50%;
   text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 p {
@@ -44,7 +37,7 @@ p {
 
 h2 {
   font-family: inter, arial, sans-serif;
-  color: white; /* controls color and font of heading/game name */
+  color: white; 
   font-size: 20px;
 }
 
@@ -59,7 +52,7 @@ h2 {
   background: #6fef7b;
   margin: 0;
   position: absolute;
-  top: 60%;
+  bottom: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
@@ -75,7 +68,7 @@ h2 {
   background: #6fef7b;
   position: absolute;
   left: 50%;
-  top: 70%;
+  bottom: 20%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
 }
@@ -91,8 +84,23 @@ h2 {
   background: black;
   color: white;
   height: 20px;
-  width: 400px;
-  position: relative;
+  width: 32%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-bottom: 2px solid;
+  border-color: white;
+}
+
+.form__input1 {
+  background: black;
+  color: white;
+  height: 20px;
+  width: 32%;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: none;
@@ -101,14 +109,22 @@ h2 {
 }
 
 .input-instruction {
-  padding: 30px 10px 20px 10px;
-  position: relative;
-  left: 42%;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 34%;
+  top: 32%;
+}
+
+.input-instruction1 {
+  position: absolute;
+  left: 34%;
+  top: 42%;
 }
 
 .forgot-pass {
-  position: relative;
-  left: 57%;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 40%;
+  left: 56%;
+}
+.forgot-pass:hover {
+  color: lightblue;
 }
