@@ -7,98 +7,267 @@
 
     <title>Syllabuddy</title>
 
-    <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="static/schedule.css" />
-     <script type="text/javascript" src="static/script.js" defer></script>
+    <script type="text/javascript" src="static/script.js" defer></script>
+  
   </head>
-    <div class="schedule screen">
-      
-      <div class="calendar-base">
-        <table>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-        </table>
-        <button class="calendar-box" id="courseBtn">
-          <p class="box-text">
-            CS 3339 <br/> &ensp; 2:00PM-3:20PM
-          </p>
-        </button>
-          <button class="todo-btn" id="todoBtn">To Do</button>
+  <div class="schedule screen">
+    <div class="calendar-base">
+      <table>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+      </table>
 
-        <div class="todo-pop" id="todoPop">
-          <div class="todo-box">
-            <p class="text">
-              CS3339<br/>
-              <input type="checkbox">&ensp;P:Assignment 9: Logic, Datapaths, Pipelining
-              <br>
-              <br/> 
-              <br/> CS3398 
-              <br/>
-              <input type="checkbox">&ensp; Assignment 12: Web Practice
-            </p>
-          </div>
-          <div class="todo-box1">
-            <p class="text">&ensp;</p>
-          </div>
-          <div class="todo-box2">
-            <p class="text">&ensp;</p>
-          </div>
-          <div class="todo-box3">
-            <p class="text">
-              CS3339<br/>
-              <input type="checkbox">&ensp;P:Assignment 9: Logic, Datapaths, Pipelining
-              <br>
-              <br/> 
-              <br/> CS3398 
-              <br/>
-              <input type="checkbox">&ensp; Assignment 12: Web Practice
-            </p>
-          </div>
-          <div class="todo-box4">
-            <p class="text">&ensp;</p>
-          </div>
-          <div class="todo-box5">
-            <p class="text">&ensp;</p>
-          </div>
-          <div class="todo-box6">
-            <p class="text">
-              CS3339<br/>
-              <input type="checkbox">&ensp;P:Assignment 9: Logic, Datapaths, Pipelining
-              <br>
-              <br/> 
-              <br/> CS3398 
-              <br/>
-              <input type="checkbox">&ensp; Assignment 12: Web Practice
-            </p>
-          </div>
-        </div>
-        <div class="cs3339-info" id="courseInfo" hidden>
-          <p>
-            HODYE
+      <button class="cs3339-btn" id="courseBtn">
+        <p class="box-header">CS 3339</p>
+        <p class="box-text">2:00PM-3:20PM</p>
+      </button>
+
+      <button class="cs3339-btn1" id="courseBtn1">
+        <p class="box-header">CS 3339</p>
+        <p class="box-text">2:00PM-3:20PM</p>
+      </button>
+
+      <button class="cs3398-btn" id="courseBtn2">
+        <p class="box-header">CS 3398</p>
+        <p class="box-text">5:00PM-6:20PM</p>
+      </button>
+
+      <button class="cs3398-btn1" id="courseBtn3">
+        <p class="box-header">CS 3398</p>
+        <p class="box-text">5:00PM-6:20PM</p>
+      </button>
+
+      <button class="cs4326-btn" id="courseBtn4">
+        <p class="box-header">CS 4326</p>
+        <p class="box-text">9:30PM-10:50AM</p>
+      </button>
+
+      <button class="cs4326-btn1" id="courseBtn5">
+        <p class="box-header">CS 4326</p>
+        <p class="box-text">9:30AM-10:50AM</p>
+      </button>
+
+      <button class="todo-btn" id="todoBtn">To Do</button>
+
+      <!-- cs3339 info popup -->
+      <div class="class-info" id="courseInfo" style="border-color: #ebf99a" hidden>
+        <p class="class-info-header" style="background-color: #ebf99a">
+          CS 3339 <br/> Computer Architecture
+        </p>
+        <button class="exit-btn" id="x">X</button>
+        <p class="text1">
+          2:00 PM - 3:20 PM <br />
+          Aug 22nd - Dec 9th <br /><br />
+          DERR 00234<br />Dr. Ted Lehr<br /><br />
+          CRN: 14536<br />Credits: 3.0
+        </p>
+        <div class="class-line" style="background-color: #ebf99a"></div>
+
+        <button
+          class="syllabus-btn"
+          id="syllabusBtn"
+          style="background-color: #ebf99a"
+        >
+          <p>Syllabus</p>
+        </button>
+        <button
+          class="assignments-btn"
+          id="assignmentsBtn"
+          style="background-color: #ebf99a"
+        >
+          <p>Assignments</p>
+        </button>
+        <button
+          class="grades-btn"
+          id="gradesBtn"
+          style="background-color: #ebf99a"
+        >
+          <p>Grades</p>
+        </button>
+        <button
+          class="files-btn"
+          id="filesBtn"
+          style="background-color: #ebf99a"
+        >
+          <p>Files</p>
+        </button>
+      </div>
+
+      <!-- cs3398 info popup -->
+      <div
+        class="class-info"
+        id="courseInfo1"
+        style="border-color: #bffffb"
+        hidden
+      >
+        <p class="class-info-header" style="background-color: #bffffb">
+          CS 3398 <br />
+          Computer Architecture
+        </p>
+        <button class="exit-btn" id="x1">X</button>
+        <p class="text1">
+          5:00 PM - 6:20 PM <br />
+          Aug 22nd - Dec 9th <br /><br />
+          DERR 00240<br />Dr. Ted Lehr<br /><br />
+          CRN: 12336<br />Credits: 3.0
+        </p>
+        <div class="class-line" style="background-color: #bffffb"></div>
+        <button
+          class="syllabus-btn"
+          id="syllabusBtn1"
+          style="background-color: #bffffb"
+        >
+          <p>Syllabus</p>
+        </button>
+        <button
+          class="assignments-btn"
+          id="assignmentsBtn1"
+          style="background-color: #bffffb"
+        >
+          <p>Assignments</p>
+        </button>
+        <button
+          class="grades-btn"
+          id="gradesBtn1"
+          style="background-color: #bffffb"
+        >
+          <p>Grades</p>
+        </button>
+        <button
+          class="files-btn"
+          id="filesBtn1"
+          style="background-color: #bffffb"
+        >
+          <p>Files</p>
+        </button>
+      </div>
+
+      <!-- cs4326 info popup -->
+      <div
+        class="class-info"
+        id="courseInfo2"
+        style="border-color: coral"
+        hidden
+      >
+        <p class="class-info-header" style="background-color: coral">
+          CS 4326 <br />
+          Human Factors
+        </p>
+        <button class="exit-btn" id="x2">X</button>
+        <p class="text1">
+          9:30 AM - 10:50 AM <br />
+          Aug 22nd - Dec 9th <br /><br />
+          IGRM 3104<br />Dr. Lu Wang<br /><br />
+          CRN: 10872<br />Credits: 3.0
+        </p>
+        <div class="class-line" style="background-color: coral"></div>
+        <form method="POST" id="syllabus">
+          <button
+            class="syllabus-btn"
+            id="syllabusBtn2"
+            style="background-color: coral"
+          >
+            <p>Syllabus</p>
+          </button>
+        </form>
+
+        <form method="POST" id="assignments">
+          <button
+            class="assignments-btn"
+            id="assignmentsBtn2"
+            style="background-color: coral"
+          >
+            <p>Assignments</p>
+          </button>
+        </form>
+        <form method="POST" id="grades">
+          <button
+            class="grades-btn"
+            id="gradesBtn2"
+            style="background-color: coral"
+          >
+            <p>Grades</p>
+          </button>
+        </form>
+        <form method="POST" id="files">
+          <button
+            class="files-btn"
+            id="filesBtn2"
+            style="background-color: coral"
+          >
+            <p>Files</p>
+          </button>
+        </form>
+      </div>
+      <!-- To Do popup -->
+      <div class="todo-pop" id="todoPop" hidden>
+        <div class="todo-box">
+          <p class="text">
+            CS3339<br />
+            <input type="checkbox" checked />&ensp;P:Assignment 9: Logic,
+            Datapaths, Pipelining <br /><br /><br />
+            CS3398 <br />
+            <input type="checkbox" checked />&ensp;Assignment 12: Web Practice
           </p>
+        </div>
+        <div class="todo-box1">
+          <p class="text">&ensp;</p>
+        </div>
+        <div class="todo-box2">
+          <p class="text">&ensp;</p>
+        </div>
+        <div class="todo-box3">
+          <p class="text">
+            CS3339<br />
+            <input type="checkbox" />&ensp;P: Assignment 11: Pipelines, Hazards, Exceptions
+            <br /><br /><br />CS3398<br />
+            <input type="checkbox" checked />&ensp;Assignment 13: Pull Requests
+            <br />
+            <input type="checkbox" />&ensp;Sprint 1 End
+          </p>
+        </div>
+        <div class="todo-box4">
+          <p class="text">&ensp;</p>
+        </div>
+        <div class="todo-box5">
+          <p class="text">&ensp;</p>
+        </div>
+        <div class="todo-box6">
+          <p class="text">CS4332<br /><input type="checkbox" />&ensp;Project 5</p>
         </div>
       </div>
-      <h1>October 2022</h1>
-      <p class="hours">
-          9 AM<br /><br /><br/><br /><br />
-          10 AM<br /><br/><br/><br /><br />
-          11 AM<br /><br/><br/><br /><br />
-          Noon<br /><br/><br/><br /><br />
-          1 PM<br /><br/><br/><br /><br />
-          2 PM<br /><br/><br/><br /><br />
-          3 PM<br /><br/><br/><br /><br />
-          4 PM <br /><br/><br/><br /><br />
-          5 PM<br /><br /><br /><br /><br />
-          6 PM
-      </p>
+    </div>
+    <h1>October 2022</h1>
+    <p class="days">
+      Sun 2 
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Mon 3
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Tue 4
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Wed 5
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Thu 6
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Fri 7
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Sat 8
+    </p>
+    <p class="hours">
+      9 AM<br /><br /><br /><br /><br />
+      10 AM<br /><br /><br /><br /><br />
+      11 AM<br /><br /><br /><br /><br />
+      Noon<br /><br /><br /><br /><br />
+      1 PM<br /><br /><br /><br /><br />
+      2 PM<br /><br /><br /><br /><br />
+      3 PM<br /><br /><br /><br /><br />
+      4 PM <br /><br /><br /><br /><br />
+      5 PM<br /><br /><br /><br /><br />
+      6 PM
+    </p>
   </div>
 </html>
