@@ -51,7 +51,7 @@ const loginForm = document.querySelector("#login");
 
 document.getElementById('todoBtn').onclick = function() {
     var div = document.getElementById('todoPop');
-    if (div.style.display !== 'none') {
+    if (div.style.display === 'block') {
         div.style.display = 'none';
     }
     else {
@@ -61,7 +61,82 @@ document.getElementById('todoBtn').onclick = function() {
 
 document.getElementById('courseBtn').onclick = function() {
     var div = document.getElementById('courseInfo');
-    if (div.style.display !== 'none') {
+    if (div.style.display === 'block') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+
+document.getElementById('courseBtn1').onclick = function() {
+    var div = document.getElementById('courseInfo');
+    if (div.style.display === 'block') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+
+document.getElementById('courseBtn2').onclick = function() {
+    var div = document.getElementById('courseInfo1');
+    if (div.style.display === 'block') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+document.getElementById('courseBtn3').onclick = function() {
+    var div = document.getElementById('courseInfo1');
+    if (div.style.display === 'block') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+
+document.getElementById('courseBtn4').onclick = function() {
+    var div = document.getElementById('courseInfo2');
+    if (div.style.display === 'block') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+document.getElementById('courseBtn5').onclick = function() {
+    var div = document.getElementById('courseInfo2');
+    if (div.style.display === 'block') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+document.getElementById('x').onclick = function() {
+    var div = document.getElementById('courseInfo');
+    if (div.style.display === 'block') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+document.getElementById('x1').onclick = function() {
+    var div = document.getElementById('courseInfo1');
+    if (div.style.display === 'block') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};
+document.getElementById('x2').onclick = function() {
+    var div = document.getElementById('courseInfo2');
+    if (div.style.display === 'block') {
         div.style.display = 'none';
     }
     else {
