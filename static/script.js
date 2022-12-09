@@ -47,7 +47,7 @@ function clearInputError(inputElement, message) {
 
 const containerForm = document.querySelector("#loginPage");
 const loginForm = document.querySelector("#login");
-
+const signupForm = document.querySelector("#signup");
 
 document.getElementById('todoBtn').onclick = function() {
     var div = document.getElementById('todoPop');
@@ -143,3 +143,9 @@ document.getElementById('x2').onclick = function() {
         div.style.display = 'block';
     }
 };
+
+document.querySelector("#linkCreateAccount").addEventListener("click", (e) => {
+  e.preventDefault();
+  loginForm.classList.add("form--hidden");
+  signupForm.classList.remove("form--hidden");
+});
