@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 1024px;
+  height: 768px;
+  background-color: black;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  line-height: 1.5;
+  background-color: black; /* controls backdrop color */
+
+  --color-primary: #009579;
+  --color-primary-dark: #007f67;
+  --color-secondary: #252c6a;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+}
+
+h1 {
+  font-family: inter, arial, sans-serif;
+  font-size: 32px;
+  color: white; 
+  background-color: black;
+  text-align: left;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
